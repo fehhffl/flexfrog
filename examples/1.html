@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo 1: justify-content: flex-end</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Fira+Code&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="common.css" />
+        <style>
+            /* Estilos específicos para este exemplo */
+            .pond {
+                justify-content: flex-end;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Exemplo 1: justify-content: flex-end</h1>
+
+            <p>
+                Neste exemplo, queremos mover os sapos para a direita do lago. Usamos a propriedade
+                <code>justify-content</code> com o valor <code>flex-end</code>.
+            </p>
+
+            <div class="pond">
+                <div class="frog"><img src="../img/frog1.jpg" alt="Sapo" /></div>
+            </div>
+
+            <div class="code">
+                <code>
+                    .pond {<br />
+                    &nbsp;&nbsp;display: flex;<br />
+                    &nbsp;&nbsp;justify-content: flex-end;<br />
+                    }
+                </code>
+            </div>
+
+            <p>
+                A propriedade <code>justify-content</code> alinha os itens horizontalmente e aceita os seguintes
+                valores:
+            </p>
+            <ul>
+                <li><code>flex-start</code>: Itens se alinham à esquerda do container.</li>
+                <li><code>flex-end</code>: Itens se alinham à direita do container.</li>
+                <li><code>center</code>: Itens se alinham no centro do container.</li>
+                <li>
+                    <code>space-between</code>: Itens são distribuídos igualmente; o primeiro na esquerda e o último na
+                    direita.
+                </li>
+                <li><code>space-around</code>: Itens são distribuídos igualmente com espaço igual ao redor deles.</li>
+            </ul>
+
+            <a href="../index.html" class="back-link">Voltar para a lista de exemplos</a>
+        </div>
+    </body>
+</html>

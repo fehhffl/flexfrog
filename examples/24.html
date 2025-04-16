@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo 24: Combinação Completa</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f0f8ff;
+            }
+            h1 {
+                color: #44a259;
+                text-align: center;
+            }
+            .pond {
+                background-color: #228b22;
+                display: flex;
+                height: 400px;
+                margin: 20px 0;
+                border-radius: 10px;
+                padding: 10px;
+                width: 350px;
+                /* Solução para o Nível 24 */
+                flex-flow: column-reverse wrap-reverse;
+                justify-content: center;
+                align-content: space-between;
+            }
+            .frog {
+                background-color: #76c442;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+                margin: 5px;
+            }
+            #frog1 {
+                order: 1;
+                align-self: flex-end;
+            }
+            #frog2 {
+                order: 2;
+            }
+            #frog3 {
+                order: 3;
+                align-self: flex-start;
+            }
+            .frog img {
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 50%;
+            }
+            .code {
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+            }
+            code {
+                font-family: monospace;
+                color: #333;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #6ac06f;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo 24: Combinação Completa</h1>
+
+        <p>
+            Neste exemplo final, combinamos todas as propriedades Flexbox que aprendemos para criar um layout complexo e
+            personalizado.
+        </p>
+
+        <div class="pond">
+            <div id="frog1" class="frog"><img src="../img/frog1.jpg" alt="Sapo 1" /></div>
+            <div id="frog2" class="frog"><img src="../img/frog2.jpg" alt="Sapo 2" /></div>
+            <div id="frog3" class="frog"><img src="../img/frog3.jpg" alt="Sapo 3" /></div>
+            <div class="frog"><img src="../img/frog1.jpg" alt="Sapo 4" /></div>
+            <div class="frog"><img src="../img/frog2.jpg" alt="Sapo 5" /></div>
+            <div class="frog"><img src="../img/frog3.jpg" alt="Sapo 6" /></div>
+        </div>
+
+        <div class="code">
+            <code>
+                .pond {<br />
+                &nbsp;&nbsp;display: flex;<br />
+                &nbsp;&nbsp;flex-flow: column-reverse wrap-reverse;<br />
+                &nbsp;&nbsp;justify-content: center;<br />
+                &nbsp;&nbsp;align-content: space-between;<br />
+                }<br />
+                <br />
+                #frog1 {<br />
+                &nbsp;&nbsp;order: 1;<br />
+                &nbsp;&nbsp;align-self: flex-end;<br />
+                }<br />
+                <br />
+                #frog2 {<br />
+                &nbsp;&nbsp;order: 2;<br />
+                }<br />
+                <br />
+                #frog3 {<br />
+                &nbsp;&nbsp;order: 3;<br />
+                &nbsp;&nbsp;align-self: flex-start;<br />
+                }
+            </code>
+        </div>
+
+        <p>Neste exemplo complexo, utilizamos diversas propriedades Flexbox:</p>
+        <ul>
+            <li>
+                <code>flex-flow: column-reverse wrap-reverse</code>: Propriedade abreviada que combina
+                <code>flex-direction</code> e <code>flex-wrap</code>.
+            </li>
+            <li><code>justify-content: center</code>: Centraliza os itens no eixo principal.</li>
+            <li><code>align-content: space-between</code>: Distribui as linhas igualmente no eixo transversal.</li>
+            <li><code>order</code>: Altera a ordem de exibição dos elementos.</li>
+            <li><code>align-self</code>: Permite o alinhamento individual de itens no eixo transversal.</li>
+        </ul>
+
+        <p>
+            Parabéns por chegar ao final dos exemplos de Flexbox! Agora você tem uma compreensão completa de como usar o
+            Flexbox para criar layouts modernos e responsivos.
+        </p>
+
+        <a href="../index.html" class="back-link">Voltar para a lista de exemplos</a>
+    </body>
+</html>

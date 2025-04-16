@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo 17: order & align-self</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f0f8ff;
+            }
+            h1 {
+                color: #44a259;
+                text-align: center;
+            }
+            .pond {
+                background-color: #228b22;
+                display: flex;
+                height: 300px;
+                margin: 20px 0;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .frog {
+                background-color: #76c442;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+                margin: 5px;
+            }
+            #frog1 {
+                order: 2;
+            }
+            #frog2 {
+                /* Solução para o Nível 17 */
+                order: 1;
+                align-self: flex-end;
+            }
+            #frog3 {
+                order: 3;
+            }
+            .frog img {
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 50%;
+            }
+            .code {
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+            }
+            code {
+                font-family: monospace;
+                color: #333;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #6ac06f;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo 17: order & align-self</h1>
+
+        <p>
+            Neste exemplo, queremos mudar a ordem dos sapos e alinhar um deles na parte inferior do lago. Combinamos as
+            propriedades <code>order</code> e <code>align-self</code>.
+        </p>
+
+        <div class="pond">
+            <div id="frog1" class="frog"><img src="../img/frog1.jpg" alt="Sapo 1" /></div>
+            <div id="frog2" class="frog"><img src="../img/frog2.jpg" alt="Sapo 2" /></div>
+            <div id="frog3" class="frog"><img src="../img/frog3.jpg" alt="Sapo 3" /></div>
+        </div>
+
+        <div class="code">
+            <code>
+                #frog1 {<br />
+                &nbsp;&nbsp;order: 2;<br />
+                }<br />
+                #frog2 {<br />
+                &nbsp;&nbsp;order: 1;<br />
+                &nbsp;&nbsp;align-self: flex-end;<br />
+                }<br />
+                #frog3 {<br />
+                &nbsp;&nbsp;order: 3;<br />
+                }
+            </code>
+        </div>
+
+        <p>Neste exemplo, combinamos duas propriedades para os itens flexíveis:</p>
+        <ul>
+            <li><code>order</code>: Reorganizamos a ordem horizontal dos sapos.</li>
+            <li><code>align-self</code>: Movemos o segundo sapo para a parte inferior do lago.</li>
+        </ul>
+
+        <a href="../index.html" class="back-link">Voltar para a lista de exemplos</a>
+    </body>
+</html>

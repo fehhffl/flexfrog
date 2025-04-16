@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo 8: flex-direction: row-reverse</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f0f8ff;
+            }
+            h1 {
+                color: #44a259;
+                text-align: center;
+            }
+            .pond {
+                background-color: #228b22;
+                display: flex;
+                height: 300px;
+                margin: 20px 0;
+                border-radius: 10px;
+                padding: 10px;
+                /* Solução para o Nível 8 */
+                flex-direction: row-reverse;
+            }
+            .frog {
+                background-color: #76c442;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+                margin: 5px;
+            }
+            .frog img {
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 50%;
+            }
+            .code {
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+            }
+            code {
+                font-family: monospace;
+                color: #333;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #6ac06f;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo 8: flex-direction: row-reverse</h1>
+
+        <p>
+            Neste exemplo, queremos inverter a ordem dos sapos horizontalmente. Usamos a propriedade
+            <code>flex-direction</code> com o valor <code>row-reverse</code>.
+        </p>
+
+        <div class="pond">
+            <div class="frog"><img src="../img/frog1.jpg" alt="Sapo 1" /></div>
+            <div class="frog"><img src="../img/frog2.jpg" alt="Sapo 2" /></div>
+            <div class="frog"><img src="../img/frog3.jpg" alt="Sapo 3" /></div>
+        </div>
+
+        <div class="code">
+            <code>
+                .pond {<br />
+                &nbsp;&nbsp;display: flex;<br />
+                &nbsp;&nbsp;flex-direction: row-reverse;<br />
+                }
+            </code>
+        </div>
+
+        <p>
+            A propriedade <code>flex-direction</code> define a direção dos itens flexíveis no container e aceita os
+            seguintes valores:
+        </p>
+        <ul>
+            <li><code>row</code>: Itens são alinhados horizontalmente da esquerda para a direita (padrão).</li>
+            <li><code>row-reverse</code>: Itens são alinhados horizontalmente da direita para a esquerda.</li>
+            <li><code>column</code>: Itens são alinhados verticalmente de cima para baixo.</li>
+            <li><code>column-reverse</code>: Itens são alinhados verticalmente de baixo para cima.</li>
+        </ul>
+
+        <a href="../index.html" class="back-link">Voltar para a lista de exemplos</a>
+    </body>
+</html>

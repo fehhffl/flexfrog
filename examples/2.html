@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Exemplo 2: justify-content: center</title>
+        <style>
+            body {
+                font-family: "Arial", sans-serif;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: #f0f8ff;
+            }
+            h1 {
+                color: #44a259;
+                text-align: center;
+            }
+            .pond {
+                background-color: #228b22;
+                display: flex;
+                height: 300px;
+                margin: 20px 0;
+                border-radius: 10px;
+                padding: 10px;
+                /* Solução para o Nível 2 */
+                justify-content: center;
+            }
+            .frog {
+                background-color: #76c442;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                color: white;
+                margin: 5px;
+            }
+            .frog img {
+                max-width: 80px;
+                max-height: 80px;
+                border-radius: 50%;
+            }
+            .code {
+                background-color: #f5f5f5;
+                padding: 20px;
+                border-radius: 10px;
+                margin: 20px 0;
+            }
+            code {
+                font-family: monospace;
+                color: #333;
+            }
+            .back-link {
+                display: inline-block;
+                margin-top: 20px;
+                background-color: #6ac06f;
+                color: white;
+                padding: 10px 15px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Exemplo 2: justify-content: center</h1>
+
+        <p>
+            Neste exemplo, queremos posicionar os sapos no centro do lago. Usamos a propriedade
+            <code>justify-content</code> com o valor <code>center</code>.
+        </p>
+
+        <div class="pond">
+            <div class="frog"><img src="../img/frog2.jpg" alt="Sapo" /></div>
+        </div>
+
+        <div class="code">
+            <code>
+                .pond {<br />
+                &nbsp;&nbsp;display: flex;<br />
+                &nbsp;&nbsp;justify-content: center;<br />
+                }
+            </code>
+        </div>
+
+        <p>A propriedade <code>justify-content</code> alinha os itens horizontalmente e aceita os seguintes valores:</p>
+        <ul>
+            <li><code>flex-start</code>: Itens se alinham à esquerda do container.</li>
+            <li><code>flex-end</code>: Itens se alinham à direita do container.</li>
+            <li><code>center</code>: Itens se alinham no centro do container.</li>
+            <li>
+                <code>space-between</code>: Itens são distribuídos igualmente; o primeiro na esquerda e o último na
+                direita.
+            </li>
+            <li><code>space-around</code>: Itens são distribuídos igualmente com espaço igual ao redor deles.</li>
+        </ul>
+
+        <a href="../index.html" class="back-link">Voltar para a lista de exemplos</a>
+    </body>
+</html>
