@@ -8,22 +8,22 @@ FlexboxFroggy é uma ferramenta de aprendizado que demonstra visualmente as prop
 
 ## Características
 
--   **24 exemplos interativos**: Cada exemplo demonstra uma propriedade ou combinação de propriedades do Flexbox
--   **Interface visual**: Aprenda vendo como os sapos se movem no lago com diferentes propriedades CSS
--   **Explicações detalhadas**: Cada exemplo inclui código e explicações das propriedades Flexbox
--   **Design responsivo**: Funciona em dispositivos desktop e móveis
--   **Layout moderno**: Interface limpa e agradável para facilitar o aprendizado
+- **24 exemplos interativos**: Cada exemplo demonstra uma propriedade ou combinação de propriedades do Flexbox
+- **Interface visual**: Aprenda vendo como os sapos se movem no lago com diferentes propriedades CSS
+- **Explicações detalhadas**: Cada exemplo inclui código e explicações das propriedades Flexbox
+- **Design responsivo**: Funciona em dispositivos desktop e móveis
+- **Layout moderno**: Interface limpa e agradável para facilitar o aprendizado
 
 ## Propriedades Abordadas
 
--   `justify-content`
--   `align-items`
--   `flex-direction`
--   `order`
--   `align-self`
--   `flex-wrap`
--   `flex-flow`
--   `align-content`
+- `justify-content`
+- `align-items`
+- `flex-direction`
+- `order`
+- `align-self`
+- `flex-wrap`
+- `flex-flow`
+- `align-content`
 
 ## Como Usar
 
@@ -34,10 +34,10 @@ FlexboxFroggy é uma ferramenta de aprendizado que demonstra visualmente as prop
 
 ## Tecnologias Utilizadas
 
--   HTML5
--   CSS3 (com foco em Flexbox)
--   Design responsivo
--   Animações CSS
+- HTML5
+- CSS3 (com foco em Flexbox)
+- Design responsivo
+- Animações CSS
 
 ## Contribuição
 
