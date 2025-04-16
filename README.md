@@ -42,7 +42,3 @@ FlexboxFroggy é uma ferramenta de aprendizado que demonstra visualmente as prop
 ## Contribuição
 
 Contribuições são bem-vindas! Se você encontrar bugs ou tiver ideias para melhorar o projeto, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para mais detalhes.
